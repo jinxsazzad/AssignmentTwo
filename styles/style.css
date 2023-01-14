@@ -1,9 +1,261 @@
-*{
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #FF900E;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+header{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+    padding-top: 40px;
+}
+section,footer{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
+}
+.btn {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-tittle {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 1rem;
+    color: black;
+}
+
+.brand-text-box {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.brand-tittle {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.brand-sub-tittle {
+    margin-top: 20px;
+}
+
+.brand-btn {
+    margin-top: 30px;
+}
+
+.header-banner {
+    margin-top: 2rem;
+}
+
+.header-banner img {
+    width: 100%;
+    height: auto;
+}
+
+.section-one {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.future-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .5rem;
+}
+
+.future-img-card {
+}
+
+.future-text h2 {
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.future-text p {
+    color: #727272;
+    margin-bottom: 30px;
+}
+
+.future-text-quick {
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
 
 }
-body{
-    background: #000;
+
+.primary-color {
+    color: var(--primary-color);
 }
-h2{
-    color: aquamarine;
+
+.section-two {
+    display: flex;
+    gap: 50px;
+    margin-top: 5rem;
+
+}
+
+.future-text-box h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    border-left: .5rem solid var(--primary-color);
+    padding: 1rem;
+}
+
+.future-text-box p {
+    margin-top: 25px;
+    color: #727272;
+}
+
+.future-text-card {
+    padding: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+.future-banner-img {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-btn {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    margin-top: -80px;
+    margin-left: -40px;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.section-three {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.exp-section-one{
+    padding: 5rem 1rem;
+    text-align: center;
+    background-color: #FF900E;
+    color: aliceblue;
+}
+.exp-section-one h1{
+    font-size: 100px;
+    font-weight: 800;
+}
+.exp-section-one h1, h2, h6{
+    padding-top: .15rem;
+}
+.exp-section-two{
+    padding: 1rem;
+    font-size: 35px;
+    font-weight: 600;
+}
+.exp-section-three{
+    font-size: 20px;
+    padding-left: 3rem;
+    border-left: .5rem solid #FF900E;
+}
+.section-four{
+    margin-top: 2rem;
+}
+
+.facts-tittle h1 {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+
+}
+
+.facts-tittle p {
+    color: #727272;
+    margin-top: 1rem;
+}
+
+.facts-items {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.facts-item {
+    padding: 2rem 3rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+}
+
+.facts-item h1 {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+
+}
+
+.facts-item h5 {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+
+}
+.sponspors h1{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    margin-top: 2rem;
+}
+.sponspors p {
+    color: #727272;
+    margin-top: 1rem;
+}
+.sponsors-logo{
+    margin: 5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    height: 100px;
+    text-align: center;
 }
