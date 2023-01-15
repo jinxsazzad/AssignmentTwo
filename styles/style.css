@@ -1,3 +1,4 @@
+/* Universal Style */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -14,6 +15,7 @@
 --------------------------------------------------- */
 body {
     font-family: 'Work Sans', sans-serif;
+    text-shadow: 0px .5px .5px rgba(81,67,21,0.8);
 }
 
 /* Header and Footer Section Style */
@@ -39,6 +41,12 @@ section {
     border-radius: 5px;
     background-color: var(--primary-color);
     color: white;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+/* All img Drop Shadow */
+img{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 5px;
 }
 
 /* ------------------------------------------------
@@ -66,8 +74,16 @@ nav {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
-    padding-right: 1rem;
+    padding: 10px;
+    margin-left: 1rem;
+    border-radius: 5px;
     color: black;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.nav-items ul li a:hover{
+    background-color: #FF900E;
+    color: aliceblue;
 }
 
 /* Header Text Section Style */
@@ -259,6 +275,24 @@ h6 {
     border-radius: 5px;
 }
 
+.facts-item:hover {
+    color: white;
+    animation-name: fact-item-animation;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes fact-item-animation {
+    from {}
+
+    to {
+        background-color: aquamarine;
+        padding: 3rem 3.5rem;
+    }
+}
+
 .facts-item h1 {
     font-weight: 600;
     font-size: 45px;
@@ -301,6 +335,7 @@ h6 {
 
 .sponsors-logo img {
     filter: grayscale(100%);
+    box-shadow: none;
 }
 
 /* ------------------------------------------------
@@ -320,10 +355,13 @@ footer {
 
 /* Mobile Devices */
 @media only screen and (max-width:577px) {
+
+    /* Body Style */
     body {
         width: 100%;
     }
 
+    /* Navigation Style */
     nav {
         display: flex;
         justify-content: center;
@@ -338,18 +376,20 @@ footer {
         display: none;
     }
 
+    /* Header Text Style */
     .brand-text-box {
         width: auto;
-    }
-
-    .section-one {
-        display: flex;
-        flex-direction: column-reverse;
     }
 
     .brand-tittle {
         font-size: 2rem;
         font-weight: 700;
+    }
+
+    /* Section One Style */
+    .section-one {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .future-img {
@@ -362,6 +402,7 @@ footer {
         padding-left: 1rem;
     }
 
+    /* Section Two Style */
     .section-two {
         display: flex;
         flex-direction: column;
@@ -375,18 +416,7 @@ footer {
         height: 100px;
     }
 
-    .section-two {
-        display: flex;
-        flex-direction: column;
-        margin: .5rem;
-
-    }
-
-    .exp-btn {
-        margin-top: -4rem;
-        margin-left: 3rem;
-        height: 100px;
-    }
+    /* Section Three Style */
 
     .section-three {
         margin-top: 2rem;
@@ -406,6 +436,7 @@ footer {
         padding-left: 1rem;
     }
 
+    /* Section Four Style */
     .section-four {
         margin: .5rem;
     }
@@ -418,6 +449,7 @@ footer {
         gap: 1rem;
     }
 
+    /* Section Five Style */
     .section-five {
         margin: .5rem;
     }
@@ -429,17 +461,10 @@ footer {
         margin: 2rem;
     }
 
+    /* Footer Section Style */
     footer {
         height: 120px;
     }
-}
-
-/* Mobile Devices */
-@media only screen and (max-width:577px) {}
-
-.facts-item:hover {
-    background-color: #a6e7a8;
-    color: white;
 }
 
 /* tablet devices */
