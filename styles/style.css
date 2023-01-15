@@ -4,20 +4,32 @@
     padding: 0;
 }
 
+/* All Variable */
 :root {
     --primary-color: #FF900E;
 }
 
+/* ------------------------------------------------
+             Common Styles or Utilities
+--------------------------------------------------- */
 body {
     font-family: 'Work Sans', sans-serif;
-    max-width: 1200px;
-    margin: auto;
-    border: 1px solid red;
-}
-.none{
-    display: none;
 }
 
+/* Header and Footer Section Style */
+header,
+footer {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* All Section Common Style */
+section {
+    max-width: 1200px;
+    margin: 0px 20px;
+    margin: auto;
+}
+
+/* All Common btn Style */
 .btn {
     font-weight: 600;
     font-size: 20px;
@@ -28,12 +40,16 @@ body {
     background-color: var(--primary-color);
     color: white;
 }
-/* Navigation Style */
 
+/* ------------------------------------------------
+               Header Section Style
+--------------------------------------------------- */
+/* Navigation Style */
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2rem;
 }
 
 .nav-tittle {
@@ -54,16 +70,18 @@ nav {
     color: black;
 }
 
+/* Header Text Section Style */
 .brand-text-box {
     display: flex;
     align-items: center;
     margin: auto;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
+    width: 60%;
 }
 
 .brand-tittle {
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -75,6 +93,7 @@ nav {
     margin-top: 30px;
 }
 
+/* Header Banner Section Style */
 .header-banner {
     margin-top: 2rem;
 }
@@ -82,19 +101,12 @@ nav {
 .header-banner img {
     width: 100%;
     height: auto;
-}
-/* ---------------------
-    Media Queries 
------------------------*/
-
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-    
+    margin-bottom: 3rem;
 }
 
-/* tablet devices */
-@media only screen and (min-width: 688px) and (max-width:992px) {}
-
+/* ------------------------------------------------
+                Section One Style
+--------------------------------------------------- */
 .section-one {
     display: flex;
     gap: 5rem;
@@ -107,8 +119,6 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     gap: .5rem;
 }
-
-.future-img-card {}
 
 .future-text h2 {
     font-weight: 700;
@@ -132,11 +142,9 @@ nav {
     color: var(--primary-color);
 }
 
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-    
-}
-
+/* ------------------------------------------------
+                Section Two Style
+--------------------------------------------------- */
 .section-two {
     display: flex;
     gap: 50px;
@@ -177,11 +185,10 @@ nav {
     font-weight: 700;
     font-size: 30px;
 }
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-    
-    
-}
+
+/* ------------------------------------------------
+                Section Three Style
+--------------------------------------------------- */
 
 .section-three {
     margin-top: 2rem;
@@ -219,12 +226,10 @@ h6 {
     padding-left: 3rem;
     border-left: .5rem solid #FF900E;
 }
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-    
 
-}
-
+/* ------------------------------------------------
+                Section Four Style
+--------------------------------------------------- */
 .section-four {
     margin-top: 2rem;
 }
@@ -267,18 +272,20 @@ h6 {
     color: #727272;
 
 }
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-   
-}
-.section-five{
 
+/* ------------------------------------------------
+                Section Five Style
+--------------------------------------------------- */
+
+.section-five {
+    text-align: center;
 }
+
 .sponspors h1 {
     font-weight: 700;
     font-size: 45px;
     color: #131313;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .sponspors p {
@@ -291,24 +298,33 @@ h6 {
     display: flex;
     justify-content: space-between;
 }
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-   
+
+.sponsors-logo img {
+    filter: grayscale(100%);
 }
+
+/* ------------------------------------------------
+                  Footer Style
+--------------------------------------------------- */
+
 
 footer {
     height: 100px;
     text-align: center;
+    padding-top: 2rem;
 }
-/* Mobile Devices */
-@media only screen and (max-width:577px) {
-    
-    
-}
+
+/* ------------------------------------------------
+         Media Quire For Responsive Website
+--------------------------------------------------- */
 
 /* Mobile Devices */
 @media only screen and (max-width:577px) {
-    nav{
+    body {
+        width: 100%;
+    }
+
+    nav {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -317,43 +333,61 @@ footer {
         background-color: #FF900E;
         color: aliceblue;
     }
-    .nav-items{
+
+    .nav-items {
         display: none;
     }
+
+    .brand-text-box {
+        width: auto;
+    }
+
     .section-one {
         display: flex;
         flex-direction: column-reverse;
     }
+
+    .brand-tittle {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
     .future-img {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: .5rem;
     }
-    .future-text{
+
+    .future-text {
         padding-left: 1rem;
     }
+
     .section-two {
         display: flex;
         flex-direction: column;
         margin: .5rem;
-    
+
     }
-    .exp-btn{
+
+    .exp-btn {
         margin-top: -4rem;
         margin-left: 3rem;
         height: 100px;
     }
+
     .section-two {
         display: flex;
         flex-direction: column;
         margin: .5rem;
-    
+
     }
-    .exp-btn{
+
+    .exp-btn {
         margin-top: -4rem;
         margin-left: 3rem;
         height: 100px;
     }
+
     .section-three {
         margin-top: 2rem;
         display: flex;
@@ -362,16 +396,20 @@ footer {
         flex-direction: column;
         margin: .5rem;
     }
-    .exp-section-one{
+
+    .exp-section-one {
         display: none;
     }
-    .exp-section-three{
+
+    .exp-section-three {
         margin-left: 1rem;
-    padding-left:1rem;
+        padding-left: 1rem;
     }
-    .section-four{
+
+    .section-four {
         margin: .5rem;
     }
+
     .facts-items {
         display: flex;
         justify-content: space-around;
@@ -379,17 +417,30 @@ footer {
         flex-direction: column;
         gap: 1rem;
     }
-    .section-five{
+
+    .section-five {
         margin: .5rem;
     }
+
     .sponsors-logo {
         display: flex;
         flex-direction: column;
         gap: 2rem;
         margin: 2rem;
     }
-    footer{
-        margin: .5rem;
-        height: 50px;
+
+    footer {
+        height: 120px;
     }
 }
+
+/* Mobile Devices */
+@media only screen and (max-width:577px) {}
+
+.facts-item:hover {
+    background-color: #a6e7a8;
+    color: white;
+}
+
+/* tablet devices */
+@media only screen and (min-width: 688px) and (max-width:992px) {}
